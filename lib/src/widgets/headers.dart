@@ -31,7 +31,7 @@ class HeaderPico extends StatelessWidget {
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
-        painter: _HeaderDiagonalPainter(),
+        painter: _HeaderPicoPainter(),
       ),
     );
   }
@@ -62,7 +62,6 @@ class _HeaderDiagonalPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return true;
   }
 }
@@ -117,7 +116,6 @@ class _HeaderTriangularPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return true;
   }
 }
@@ -146,7 +144,6 @@ class _HeaderPicoPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return true;
   }
 }
@@ -186,7 +183,6 @@ class _HeaderCurvoPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return true;
   }
 }
@@ -227,7 +223,6 @@ class _HeaderOlaPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return true;
   }
 }

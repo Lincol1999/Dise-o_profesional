@@ -1,6 +1,6 @@
+import 'package:diseno_profesional/src/pages/graficas_circulares_pages.dart';
 import 'package:flutter/material.dart';
 
-import 'package:diseno_profesional/src/pages/circular_progress_page.dart';
 // import 'package:diseno_profesional/src/retos/cuadrado_animado_page.dart';
 
 // import 'package:diseno_profesional/src/pages/header_pages.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseño Profesional',
-      home: CircularProgressPage(),
+      home: GraficasCircularesPage(),
     );
   }
 }

@@ -1,5 +1,9 @@
-import 'package:diseno_profesional/src/pages/graficas_circulares_pages.dart';
 import 'package:flutter/material.dart';
+
+import 'package:diseno_profesional/src/pages/slideshow_page.dart';
+
+// import 'package:diseno_profesional/src/pages/graficas_circulares_pages.dart';
+// import 'package:diseno_profesional/src/labs/slidershow_page.dart';
 
 // import 'package:diseno_profesional/src/retos/cuadrado_animado_page.dart';
 
@@ -17,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseño Profesional',
-      home: GraficasCircularesPage(),
+      home: SlideshowPage(),
     );
   }
 }

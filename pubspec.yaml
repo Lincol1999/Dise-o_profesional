@@ -33,6 +33,8 @@ dependencies:
   flutter_svg: ^0.19.3
   #Para manejar la instancia de la clase
   provider: 
+  #Para manejar cuadriculas de pinteres
+  flutter_staggered_grid_view: ^0.3.4
   
 
 dev_dependencies:

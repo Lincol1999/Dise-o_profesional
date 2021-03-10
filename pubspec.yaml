@@ -28,13 +28,17 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.1
-
   #Para mostrar fotos en formato svgs
   flutter_svg: ^0.19.3
   #Para manejar la instancia de la clase
   provider: 
   #Para manejar cuadriculas de pinteres
   flutter_staggered_grid_view: ^0.3.4
+  #Animaciones 
+  animate_do:
+  #Font awesome icon para futter
+  font_awesome_flutter: ^8.11.0
+  
   
 
 dev_dependencies:

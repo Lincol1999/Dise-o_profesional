@@ -1,6 +1,7 @@
-import 'package:diseno_profesional/src/pages/emergency_page.dart';
 import 'package:flutter/material.dart';
 
+import 'package:diseno_profesional/src/pages/slider_list_page.dart';
+// import 'package:diseno_profesional/src/pages/emergency_page.dart';
 // import 'package:diseno_profesional/src/pages/pinterest_page.dart';
 // import 'package:diseno_profesional/src/pages/slideshow_page.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseño Profesional',
-      home: EmergencyPage(),
+      home: SliverListPage(),
     );
   }
 }

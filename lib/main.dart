@@ -1,30 +1,24 @@
+import 'package:diseno_profesional/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-import 'package:diseno_profesional/src/pages/slider_list_page.dart';
-// import 'package:diseno_profesional/src/pages/emergency_page.dart';
-// import 'package:diseno_profesional/src/pages/pinterest_page.dart';
-// import 'package:diseno_profesional/src/pages/slideshow_page.dart';
-
-// import 'package:diseno_profesional/src/pages/graficas_circulares_pages.dart';
-// import 'package:diseno_profesional/src/labs/slidershow_page.dart';
-
-// import 'package:diseno_profesional/src/retos/cuadrado_animado_page.dart';
-
-// import 'package:diseno_profesional/src/pages/header_pages.dart';
-// import 'package:diseno_profesional/src/pages/animaciones_pages.dart';
+import 'package:diseno_profesional/src/pages/launcher_page.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (context) => new ThemeChanger(2), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final currentTheme = Provider.of<ThemeChanger>(context).currentTheme;
     return MaterialApp(
+      theme: currentTheme,
       debugShowCheckedModeBanner: false,
       title: 'Diseño Profesional',
-      home: SliverListPage(),
+      home: LauncherPage(),
     );
   }
 }

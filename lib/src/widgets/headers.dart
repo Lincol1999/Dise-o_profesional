@@ -190,24 +190,30 @@ class _HeaderCurvoPainter extends CustomPainter {
 }
 
 class HeaderOla extends StatelessWidget {
+  final Color color;
+
+  const HeaderOla({@required this.color});
   @override
   Widget build(BuildContext context) {
     return Container(
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
-        painter: _HeaderOlaPainter(),
+        painter: _HeaderOlaPainter(this.color),
       ),
     );
   }
 }
 
 class _HeaderOlaPainter extends CustomPainter {
+  final Color color;
+
+  _HeaderOlaPainter(this.color);
   @override
   void paint(Canvas canvas, Size size) {
     final lapiz = Paint();
 
-    lapiz.color = Color(0xff615AAB);
+    lapiz.color = this.color;
     lapiz.style = PaintingStyle.fill;
     lapiz.strokeWidth = 20;
 
